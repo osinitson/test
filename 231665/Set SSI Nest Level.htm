@@ -1,0 +1,59 @@
+<!DOCTYPE HTML SYSTEM "-//Macromedia//DWExtension layout-engine 6.0//dialog">
+<html>
+<head>
+<title>Set Server-side Include Nesting Level</title>
+<script>
+function commandButtons()
+{
+   return new Array(MM.BTN_OK,      "onOK()",
+                    MM.BTN_Cancel,  "window.close()");
+}
+
+function initializeUI()
+{
+	var initVal = dw.getPreferenceInt( "General Preferences", "SSI Nest Limit", 1 );
+	try
+	{
+		document.theForm.ssiNestLimit.value = initVal;
+	}
+	catch(e)
+	{
+		// Fail silently if there is an undefined value in the Registry.
+	}
+}
+
+function onOK()
+{
+	var newVal = document.theForm.ssiNestLimit.value;
+	var newValInt = parseInt(newVal);
+
+	// Validate
+	if ((newVal == null) ||
+		(newVal != (""+newValInt)) ||			// convert back to string for comparison to verify it's an integer
+		(newValInt < 1) || (newValInt > 99))	// check range
+	{
+		alert("Please enter an integer from 1 to 99");
+		return false;
+	}
+    	
+	dw.setPreferenceInt( "General Preferences", "SSI Nest Limit", newValInt );
+	window.close();
+}
+</script>
+<style type="text/css">
+#main { width: 350px; }
+</style>
+</head>
+
+<body onLoad="initializeUI()">
+<div id="main">
+  <p>This form allows you to set the Server-side Include Nest Level for the &quot;Nested SSI&quot; Extension.</p>
+  <form name="theForm">
+    <label>Server-side Include Nest Level:
+      <input type="text" name="ssiNestLimit" id="ssiNestLimit" size="7" maxlength="2" />
+    </label>
+  </form>
+  <p>Close and re-open any open documents for changes to take effect.</p>
+</div>
+</body>
+</html>

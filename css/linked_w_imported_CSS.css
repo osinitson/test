@@ -1,0 +1,7 @@
+@import "imported_inside_CSS.css";
+.linkedWz {  font-size: 14pt; font-style: italic; color: #CC00FF}
+a:active {  color: #99CCCC; text-decoration: blink}
+span {  color: #66CCFF; text-align: right; text-indent: 10pt}
+h4 {
+	font-family: "Courier New", Courier, monospace;
+}

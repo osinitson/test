@@ -1,0 +1,1 @@
+<p>This is from the index.php file from the themes/default/ folder</p>

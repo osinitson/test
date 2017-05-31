@@ -1,0 +1,1 @@
+<p>This is from wp-includes/compat.php</p>

@@ -1,0 +1,6 @@
+<table border="1" cellspacing="0" class="blueTable">
+  <tr>
+    <td><strong>Nesting Level - 2</strong></td>
+    <td><h2>This .txt file (somefile.txt) is nested per 'require' within header.php. It makes a blue table.</h2></td>
+  </tr>
+</table>

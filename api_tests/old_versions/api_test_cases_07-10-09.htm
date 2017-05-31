@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div title="test_case">
+  <h2>A1. Subject: <span title="subject">API Test-</span> dw.getRelatedFilesFilter()</h2>
+  <p>Feature: <span title="feature">DRF</span></p>
+  <p>Subfeature: <span title="subfeature">API</span></p>
+  <div>
+    <p>Frequency: <span title="frequency">4</span></p>
+    <p>Smoke: <span title="smoke_status">N</span></p>
+    <p>Acceptance: <span title="acceptance_status">N</span></p>
+    <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+    <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+    <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+    <p>Keywords: <span title="keywords">API</span></p>
+  </div>
+  <div title="setup">
+    <h2>Setup:</h2>
+    <ul>
+      <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+      <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+      <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+    </ul>
+  </div>
+  <div title="steps">
+    <h2>Steps:</h2>
+    <ol>
+      <li>Open a php file from the DRF site.</li>
+      <li>Go to Commands &gt; api_tests.</li>
+      <li>Click on the &quot;Get Current Related Files Filter' button.</li>
+      <li>Verify that it returns 'No custom filter is set'.</li>
+      <li>Click the 'Show Only .php' button.</li>
+      <li>Click the &quot;Get Current Related Files Filter' button again.</li>
+      <li>Verify that it returns '.php'.</li>
+    </ol>
+    <h2>A2. Subject: <span title="subject">API Test- </span>dw.setRelatedFilesFilter(<em>Filter</em>)</h2>
+    <p>Feature: <span title="feature">DRF</span></p>
+    <p>Subfeature: <span title="subfeature">API</span></p>
+    <div>
+      <p>Frequency: <span title="frequency">4</span></p>
+      <p>Smoke: <span title="smoke_status">N</span></p>
+      <p>Acceptance: <span title="acceptance_status">N</span></p>
+      <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+      <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+      <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+      <p>Keywords: <span title="keywords">API</span></p>
+    </div>
+    <div title="setup">
+      <h2>Setup:</h2>
+      <ul>
+        <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+        <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+        <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+      </ul>
+    </div>
+    <div title="steps">
+      <h2>Steps:</h2>
+      <ol>
+        <li>Open 'drupal_model/index.php'.</li>
+        <li>Go to Commands &gt; api_tests.</li>
+        <li>Click on the &quot;Set  Related Files Filter' button.</li>
+        <li>Verify that only .php pages are shows in the DRF list.</li>
+        <li>Click the Clear Filter button. </li>
+        <li>Verify that all files are returned to the list.</li>
+      </ol>
+      <h2>A3. Subject: <span title="subject">API Test- </span> dw.getQuickRelatedFilesFilterStrings() </h2>
+      <p>Feature: <span title="feature">DRF</span></p>
+      <p>Subfeature: <span title="subfeature">API</span></p>
+      <div>
+        <p>Frequency: <span title="frequency">4</span></p>
+        <p>Smoke: <span title="smoke_status">N</span></p>
+        <p>Acceptance: <span title="acceptance_status">N</span></p>
+        <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+        <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+        <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+        <p>Keywords: <span title="keywords">API</span></p>
+      </div>
+      <div title="setup">
+        <h2>Setup:</h2>
+        <ul>
+          <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+          <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+          <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+        </ul>
+      </div>
+      <div title="steps">
+        <h2>Steps:</h2>
+        <ol>
+          <li>Open 'drupal_model/index.php'.</li>
+          <li>Go to Commands &gt; api_tests.</li>
+          <li>Click on the &quot;Get Quick Files Filter' button.</li>
+          <li>Verify that '.php, .inc., .css, .js, .xml' is returned..</li>
+        </ol>
+        <h2>A4. Subject: <span title="subject">API Test- </span>dw.invokeRelatedFilesCustomFilterDialog()</h2>
+        <p>Feature: <span title="feature">DRF</span></p>
+        <p>Subfeature: <span title="subfeature">API</span></p>
+        <div>
+          <p>Frequency: <span title="frequency">4</span></p>
+          <p>Smoke: <span title="smoke_status">N</span></p>
+          <p>Acceptance: <span title="acceptance_status">N</span></p>
+          <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+          <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+          <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+          <p>Keywords: <span title="keywords">API</span></p>
+        </div>
+        <div title="setup">
+          <h2>Setup:</h2>
+          <ul>
+            <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+            <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+            <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+          </ul>
+        </div>
+        <div title="steps">
+          <h2>Steps:</h2>
+          <ol>
+            <li>Open any file.</li>
+            <li>Go to Commands &gt; api_tests.</li>
+            <li>Click on the &quot;Invoke Filter Dialog' button.</li>
+            <li>Verify that the Advanced Filter dialog opens.          </li>
+          </ol>
+          <h2>A5. Subject: <span title="subject">API Test- </span>	dw.getDynamicRelatedFilesDiscoverySetting()</h2>
+          <p>Feature: <span title="feature">DRF</span></p>
+          <p>Subfeature: <span title="subfeature">API</span></p>
+          <div>
+            <p>Frequency: <span title="frequency">4</span></p>
+            <p>Smoke: <span title="smoke_status">N</span></p>
+            <p>Acceptance: <span title="acceptance_status">N</span></p>
+            <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+            <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+            <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+            <p>Keywords: <span title="keywords">API</span></p>
+          </div>
+          <div title="setup">
+            <h2>Setup:</h2>
+            <ul>
+              <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+              <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+              <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+            </ul>
+          </div>
+          <div title="steps">
+            <h2>Steps:</h2>
+            <ol>
+              <li>Open any page.</li>
+              <li>Go to Commands &gt; api_tests.</li>
+              <li>Click on the &quot;Get Discovery Mode' button.</li>
+              <li>Verify that the alert displays the current discovery mode.</li>
+            </ol>
+            <h2>A6. Subject: <span title="subject">API Test- </span>dw.setDynamicRelatedFilesDiscoverySetting(<em>setting</em>)</h2>
+            <p>Feature: <span title="feature">DRF</span></p>
+            <p>Subfeature: <span title="subfeature">API</span></p>
+            <div>
+              <p>Frequency: <span title="frequency">4</span></p>
+              <p>Smoke: <span title="smoke_status">N</span></p>
+              <p>Acceptance: <span title="acceptance_status">N</span></p>
+              <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+              <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+              <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+              <p>Keywords: <span title="keywords">API</span></p>
+            </div>
+            <div title="setup">
+              <h2>Setup:</h2>
+              <ul>
+                <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+                <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+                <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+              </ul>
+            </div>
+            <div title="steps">
+              <h2>Steps:</h2>
+              <ol>
+                <li>Open any page.</li>
+                <li>Go to Commands &gt; api_tests.</li>
+                <li>Click on one of the Set Discovery Mode radio buttons.</li>
+                <li>Verify that the alert displays the selected discovery mode.</li>
+                <li>Click the other button and confirm the correct value is returned.</li>
+              </ol>
+              <h2>A7. Subject: <span title="subject">API Test- </span> dw.refreshRelatedFiles();</h2>
+              <p>Feature: <span title="feature">DRF</span></p>
+              <p>Subfeature: <span title="subfeature">API</span></p>
+              <div>
+                <p>Frequency: <span title="frequency">4</span></p>
+                <p>Smoke: <span title="smoke_status">N</span></p>
+                <p>Acceptance: <span title="acceptance_status">N</span></p>
+                <!--<p>Platforms: <span title="platform">All / Mac Only / Win Only</span>          </p>          <p>Accessibility: <span title="accessibility_status">Y</span>          </p>          <p>Internationalization:<span title="internationalization_status"> Y</span>          </p>          <p>Performance:<span title="performance_status"> Y</span></p>-->
+                <p>Server Models: <span title="server_models">PHP MySQL</span></p>
+                <!--<p>Connection Types: <span title="connection_types">Enter as many as apply as a comma separated list: None / All / FTP, RDS, SFTP, SourceSafe, SubVersion, WebDAV *DO NOT LEAVE BLANK*</span></p>          <p>IP Types: <span title="ip_types">Enter as many as apply as a comma separated list: None / All / IPv4, IPv6 *DO NOT LEAVE BLANK*</span></p>-->
+                <p>Keywords: <span title="keywords">API</span></p>
+              </div>
+              <div title="setup">
+                <h2>Setup:</h2>
+                <ul>
+                  <li>Download  the test folder &quot;DRF&quot; and create a site using it as your local root  folder and any server as your remote and testing server.</li>
+                  <li>Verify Related Files is enabled (it should be enabled by default). If it's not enabled, then enable it.</li>
+                  <li>Copy the api_tests.htm from &quot;DRF/api_test&quot; folder and copy it to your Commands config folder.</li>
+                </ul>
+              </div>
+              <div title="steps">
+                <h2>Steps:</h2>
+                <ol>
+                  <li>Open drupal_model.php</li>
+                  <li>Go to Commands &gt; api_tests.</li>
+                  <li>Click on &quot;Refresh Files&quot; button.</li>
+                  <li>Verify that the DRF bar refreshes all the files.</li></ol></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

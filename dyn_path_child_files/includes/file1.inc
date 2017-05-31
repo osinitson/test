@@ -1,0 +1,1 @@
+<p>This is from file1.inc. It uses the "require_once" PHP include syntax.</p>

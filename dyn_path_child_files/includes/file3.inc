@@ -1,0 +1,1 @@
+<p>This is from file3.inc. It uses the "include" PHP include syntax.</p>

@@ -1,0 +1,8 @@
+a:visited {  font-weight: lighter; color: #6633CC}
+.imported1 {
+	color: #996633;
+	text-decoration: line-through
+}
+.imported2 {  font-family: "Times New Roman", "Times", "serif"; top: auto; clip:  rect( auto  )}
+div { background-color: #CCFFFF; text-align: center }
+td {  color: #9999FF; background-color: #FFFF66; background-repeat: repeat}

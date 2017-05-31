@@ -1,0 +1,73 @@
+<!DOCTYPE HTML SYSTEM "-//Macromedia//DWExtension layout-engine 5.0//dialog">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+ function getRelatedFilesFilter(){
+	var x = dw.getRelatedFilesFilter();
+	if(x = ''){
+	 alert("There is currently no custom filter set.");
+	 }
+	 else
+	 {alert(x)}
+	}
+ function setRelatedFilesFilter(x){
+	var y = dw.setRelatedFilesFilter(x);
+	}
+ function getQuickFiles(){
+	 var c = dw.getQuickRelatedFilesFilterStrings();
+	 alert(c);
+	 }
+ function invokeFilterDialog(){
+		 	dw.invokeRelatedFilesCustomFilterDialog()
+		}	
+	function discoveryMode(){
+		alert(dw.getDynamicRelatedFilesDiscoverySetting());
+		}
+		
+	function setDiscovery(val){
+		 	dw.setDynamicRelatedFilesDiscoverySetting(val)
+			alert("Discovery Mode is now: " + dw.getDynamicRelatedFilesDiscoverySetting());
+		}
+	function refresh(){
+		dw.refreshRelatedFiles();
+		}
+</script>
+</head>
+
+<body>
+<form name="form" id="form" style="width:300px;">
+  <p>Get Current Related Files Filter:
+    <input name="ss" type="button" onClick="getRelatedFilesFilter();" />
+  </p>
+  <p>Set Related Files Filter:
+    <input name="input" type="button" onClick="setRelatedFilesFilter('.php');" value="Show only .php" />
+    <input type="submit" name="clearFilter" onClick="setRelatedFilesFilter('');" id="clearFilter" value="Clear Filter">
+  </p>
+  <p>Get Quick Files Filter:
+    <input name="input1" type="button" onClick="getQuickFiles();" value="Get Quick Filter" />
+  </p>
+  <p>Invoke Filter Dialog:
+    <input name="input2" type="button" onClick="invokeFilterDialog();" value="Invoke Filter Dialog" />
+  </p>
+  <p>Get Discovery Mode:
+    <input name="input3" type="button" onClick="discoveryMode();" value="Get Discovery Mode" />
+  </p>
+  <p>Set Discovery Mode:<br>
+    <label>
+      <input type="radio" name="RadioGroup1" value="auto" id="RadioGroup1_0" onClick="setDiscovery('Automatic');">
+      Automatic</label>
+    <br>
+    <label>
+      <input type="radio" name="RadioGroup1" value="man" id="RadioGroup1_1" onClick="setDiscovery('Manual');">
+      Manual</label>
+    <br>
+  </p>
+  <p>Refresh Dynamic Files:
+    <input name="input5" type="button" onClick="refresh();" value="Refresh Files" />
+  </p>
+</form>
+</body>
+</html>

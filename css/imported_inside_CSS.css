@@ -1,0 +1,7 @@
+@import "third_level_nested.css";
+td {  color: #9999FF; background-color: #FFFF66; background-repeat: repeat}
+.importedIn { font-family: "Arial", "Helvetica", "sans-serif"; text-transform: uppercase }
+a:hover { font-weight: 400; color: #FF3333 }
+h4 {
+	font-style: oblique;
+}

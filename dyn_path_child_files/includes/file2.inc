@@ -1,0 +1,1 @@
+<p>This is from file2.inc. It uses the "require" PHP include syntax.</p>

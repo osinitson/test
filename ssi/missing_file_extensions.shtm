@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SSI example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="ssi.css" rel="stylesheet" type="text/css">
+<link href="ssi2." rel="stylesheet" type="text/css">
+<link href="ssi3" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--#include file="includes/header1.htm" -->
+<!--#include file="includes/header4.h" -->
+<!--#include file="includes/header5." -->
+<!--#include file="includes/header6" -->
+<!--#include file="includes/header2.inc" -->
+<!--#include virtual="/Code_Nav/ssi/includes/header3.ssi" -->
+<p>This text is from the parent doc main1.shtm. The include statments used on this page are LOCAL TEST:</p>
+<table border="1">
+  <tr>
+    <td>&lt;!--#include file=&quot;includes/header1.htm&quot; --&gt;</td>
+    <td>(document relative path)</td>
+  </tr>
+  <tr>
+    <td>&lt;!--#include file=&quot;includes/header2.inc&quot; --&gt;</td>
+    <td>(document relative path)</td>
+  </tr>
+  <tr>
+    <td>&lt;!--#include virtual=&quot;/dalcala/Code_Nav_Samples/ssi/includes/header3.ssi&quot; --&gt;</td>
+    <td>(site root relative path)</td>
+  </tr>
+</table>
+<p>================================</p>
+<p>Nested include test. DW only displays one block  below (brown text), but the browser displays two blocks (brown text and pink text):</p>
+</body>
+</html>

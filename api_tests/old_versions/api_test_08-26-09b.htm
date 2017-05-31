@@ -1,0 +1,134 @@
+<!DOCTYPE HTML SYSTEM "-//Macromedia//DWExtension layout-engine 5.0//dialog">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" language="javascript" src="dwfilefilter.js"></script>
+<script>
+function getRelatedFilesFilter(){
+	var x = dw.getRelatedFilesFilter();
+	if(x = ''){
+		alert("There is currently no custom filter set.");
+	}
+	else
+		{alert(x)}
+}
+function setRelatedFilesFilter(x){
+	var y = dw.setRelatedFilesFilter(x);
+}
+function getQuickFiles(){
+	var c = dw.getQuickRelatedFilesFilterStrings();
+	alert(c);
+}
+function invokeFilterDialog(){
+	dw.invokeRelatedFilesCustomFilterDialog()
+}
+function discoveryMode(){
+	alert(dw.getDynamicRelatedFilesDiscoverySetting());
+}
+function setDiscovery(val){
+	dw.setDynamicRelatedFilesDiscoverySetting(val);
+	alert("Discovery Mode is now: " + dw.getDynamicRelatedFilesDiscoverySetting());
+}
+function refreshFiles(){
+	dw.refreshRelatedFiles();
+}
+</script>
+</head>
+
+<body>
+<form name="form" id="form" >
+  <table width="590">
+    <tr>
+    <th colspan="2">DRF API</th>
+    <th colspan="2">DWFilenameFilter</th>
+    </tr>
+  <tr>
+    <td width="157" align="right">Get Current Related Files Filter: </td>
+    <td width="164"><input name="ss" type="button" onClick="getRelatedFilesFilter();" value="Current Filter" /></td>
+    <td width="119" align="right">Filter Is Valid:</td>
+    <td width="130"><input name="button" type="submit" id="button" onClick="filterIsValid();" value="Filter Is Valid"></td>
+  </tr>
+  <tr>
+    <td align="right">Set Related Files Filter: </td>
+    <td><input name="input" type="button" onClick="setRelatedFilesFilter('.php');" value="Show only .php" />      <input type="submit" name="clearFilter" onClick="setRelatedFilesFilter('');" id="clearFilter" value="Clear Filter"></td>
+    <td align="right">Is Extension Type Filter?:</td>
+    <td><input name="button2" type="submit" id="button2" onClick="isExtTypeFilter();" value="Extension Filter Type"></td>
+  </tr>
+  <tr>
+    <td align="right">Get Quick Files Filter: </td>
+    <td><input name="input1" type="button" onClick="getQuickFiles();" value="Get Quick Filter" /></td>
+    <td align="right">Is Filter Empty?:</td>
+    <td><input name="button3" type="submit" id="button3" onClick="isEmpty();" value="Filter Empty?"></td>
+  </tr>
+  <tr>
+    <td align="right">Invoke Filter Dialog: </td>
+    <td><input name="input2" type="button" onClick="invokeFilterDialog();" value="Invoke Filter Dialog" /></td>
+    <td align="right">Has Extension?:</td>
+    <td><input name="button4" type="submit" id="button4" onClick="hasExtension();" value="Has Extension?"></td>
+  </tr>
+  <tr>
+    <td align="right">Get Discovery Mode: </td>
+    <td><input name="input3" type="button" onClick="discoveryMode();" value="Get Discovery Mode" /></td>
+    <td align="right">Is Advanced?:</td>
+    <td><input name="button5" type="submit" id="button5" onClick="isAdvanced();" value="Is Advanced?"></td>
+  </tr>
+  <tr>
+    <td align="right">Set Discovery Mode:<br>
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup1" value="automatic" id="RadioGroup1_0" onClick="setDiscovery(this.value);">
+      Automatic</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup1" value="manual" id="RadioGroup1_1" onClick="setDiscovery(this.value);">
+      Manual&nbsp;&nbsp;</label></td>
+    <td align="right">Will it match anything?:</td>
+    <td><input name="button6" type="submit" id="button6" onClick="willMatch();" value="Match Anything?"></td>
+  </tr>
+  <tr>
+    <td align="right">Refresh Dynamic Files: </td>
+    <td><input name="input5" type="button" onClick="refreshFiles();" value="Refresh Files" /></td>
+    <td align="right">get Expression:</td>
+    <td><input name="button7" type="submit" id="button7" onClick="getExp();" value="Get Expression"></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">set Expression:</td>
+    <td><input name="button8" type="submit" id="button8" onClick="setExp();" value="Set Expression"></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">get Filters:</td>
+    <td><input name="button9" type="submit" id="button9" onClick="getFilters();" value="Get Filters"></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">get Extension Filters:</td>
+    <td><input name="button10" type="submit" id="button10" onClick="getExpFilters();" value="Get Extension Filters"></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">add Filter to Exp:</td>
+    <td><input name="button11" type="submit" id="button11" onClick="addFilterToExp();" value="Add .xml to Filter"></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">remove Filter:</td>
+    <td><input name="button12" type="submit" id="button12" onClick="removeFilter();" value="Remove .xml from Filter"></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">empty Filter:</td>
+    <td><input name="button13" type="submit" id="button13" onClick="emptyFilter();" value="Empty Filter"></td>
+  </tr>
+  </table>
+</form>
+</body>
+</html>

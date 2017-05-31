@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://dreamweaver.macromedia.com/stiletto/css/stiletto.css" rel="stylesheet" type="text/css" />
+<link href="http://imgs.sfgate.com/templates/types/Default/style/basic.css" rel="stylesheet" type="text/css" />
+<link href="http://dreamqa01.macromedia.com/upawlik/url.css" rel="stylesheet" type="text/css" />
+<link href="http://dreamqe07.corp.adobe.com/DRF/css/A_test.css" rel="stylesheet" type="text/css" />
+
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<p>You should see the following six CSS files in the related files bar:</p>
+<ol>
+  <li>stiletto.css</li>
+  <li>reset-fonts-grids.css</li>
+  <li>base.css</li>
+  <li>basic.css</li>
+  <li>url.css</li>
+  <li>A_test.css</li>
+</ol>
+<p>E_absolute_ path_CSS.htm references <strong>stiletto.css</strong> using an absolute path URL:</p>
+<ul>
+  <li>http://dreamweaver.macromedia.com/stiletto/css/stiletto.css.</li>
+  <li>stiletto.css is not in the same site as E_absolute_ path_CSS.htm.</li>
+  <li>I do have a site setup for dreamweaver.macromedia.com and I do have stiletto.css on my local hard drive.</li>
+  <li>In DW CS5, you should not see an info bar message saying: &quot;'stiletto.css' is a remote file and cannot be edited.&quot;</li>
+</ul>
+<blockquote>
+  <p>stiletto.css references <strong>reset-fonts-grids.css</strong> and <strong>base.css</strong> using document relative paths</p>
+  <ul>
+    <li>@import url(&quot;yahooUI/reset-fonts-grids.css&quot;)</li>
+    <li>@import url(&quot;yahooUI/base.css&quot;)</li>
+    <li>these are nested CSS files</li>
+    <li>I do have reset-fonts-grids.css and base.css on my local hard drive.</li>
+    <li>In DW CS5, you should not see an info bar message saying: &quot;'reset-fonts-grids.css' is a remote file and cannot be edited.&quot; Same goes for base.css.</li>
+  </ul>
+</blockquote>
+<p>E_absolute_ path_CSS.htm references <strong>basic.css</strong> using an absolute path URL:</p>
+<ul>
+  <li>http://imgs.sfgate.com/templates/types/Default/style/basic.css</li>
+  <li>I do <strong>not</strong> have a DW site setup for imgs.sfgate.com.</li>
+  <li>DW should display the code for this CSS file - may need to use a different URL in case sfgate.com moves/deletes this css file.</li>
+  <li>You should see an info bar message saying: &quot;'basic.css' is a remote file and cannot be edited.&quot;</li>
+</ul>
+<p>E_absolute_ path_CSS.htm references <strong>url.css</strong> using an absolute path URL:</p>
+<ul>
+  <li>http://dreamqa01.macromedia.com/upawlik/url.css</li>
+  <li>the dreamqa01 server is no longer running so this file doesn't exist, so DW can't display any code</li>
+  <li>url.css is not in the same site as E_absolute_ path_CSS.htm.</li>
+  <li>I do <strong>not</strong> have a site setup for dreamqa01.macromedia.com and do not have this file locally</li>
+</ul>
+<p>E_absolute_ path_CSS.htm references <strong>A_test.css</strong> using an absolute path URL:</p>
+<ul>
+  <li>http://dreamqe07.corp.adobe.com/DRF/css/A_test.css</li>
+  <li>A_test.css is in the same site as E_absolute_ path_CSS.htm.</li>
+  <li>The URL prefix in the site definition matches the URL for the CSS file.</li>
+  <li>In DW CS5, you should not see an info bar message saying: &quot;'A_test.css' is a remote file and cannot be edited.&quot;</li>
+  <li>Covered in CS4 Rel Files test case 22322.</li>
+</ul>
+<p><br />
+</p>
+<p><a href="#">This is a link</a></p>
+<h2>This is an H2 tag</h2>
+<h3>This is an H3 tag</h3>
+</body>
+</html>

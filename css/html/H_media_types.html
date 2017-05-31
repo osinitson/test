@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+<link href="../screen.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../print.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+
+<body>
+<p>View &gt; Toolbars &gt; Style Rendering </p>
+<p>The Style Rendering toolbar (hidden by default) contains buttons that let
+  you see how your design would look in different media types if you use media-dependent
+  style sheets. It also contains a button that lets you turn CSS styles on and
+  off. To display the toolbar, select View &gt; Toolbars &gt; Style Rendering.</p>
+<p>This toolbar only works if your documents use <span class="red">media-dependent
+    style sheets</span>.
+  For example, your style sheet might specify a body rule for print and a different
+  body rule for handheld devices. For more information on creating media-dependent
+  style sheets, see the World Wide Web Consortium website at <a href="http://www.w3.org/TR/CSS21/media.html" target="mm_window">www.w3.org/TR/CSS21/media.html</a>.</p>
+<p>most common use will be for screen and print</p>
+<p>Our TechNotes are a good example: <a href="http://www.macromedia.com/cfusion/knowledgebase/index.cfm?id=tn_19515" target="_blank">Dreamweaver
+    and Windows XP Service Pack 2 </a>; view source; notice these lines of code
+    near the top:<br />
+  &lt;link charset=&quot;utf-8&quot;   media=&quot;handheld&quot; type=&quot;text/css&quot; href=&quot;/css/handheld.css&quot; rev=&quot;stylesheet&quot;   rel=&quot;stylesheet&quot;/&gt;<br />
+  &lt;link charset=&quot;utf-8&quot; media=&quot;aural, braille, embossed&quot; type=&quot;text/css&quot; href=&quot;/css/assistive.css&quot; rev=&quot;stylesheet&quot;   rel=&quot;stylesheet&quot;/&gt;<br />
+  &lt;link charset=&quot;utf-8&quot; media=&quot;print&quot; type=&quot;text/css&quot;   href=&quot;/css/print.css&quot; rev=&quot;stylesheet&quot; rel=&quot;stylesheet&quot;/&gt;<br />
+  &lt;link charset=&quot;utf-8&quot; media=&quot;screen&quot; type=&quot;text/css&quot; href=&quot;/css/mm_import.css&quot;   rev=&quot;stylesheet&quot; rel=&quot;stylesheet&quot;/&gt;</p>
+<p>In IE, do a print preview to see how the look of the page changes </p>
+<p>The @media rule in CSS allows you to assign specific styles based on the type
+  of device the page will be displayed on. There is no need to create separate
+  HTML files for each device, only separate @media rules within a single CSS
+  file. There is also no need to make a separate request from the web server,
+  since the switch between media types is done on the client side.</p>
+<p>By default, DW displays your design for the screen media type (which shows
+  you how a page is rendered on a computer screen). You can view the following
+  media type renderings by clicking the respective buttons in the Style Rendering
+  toolbar.</p>
+<p><strong>Render Screen Media Type </strong>shows you how the page appears on
+  a computer screen.</p>
+<p><strong>Render Print Media Type</strong> shows you how the page appears on
+  a printed piece of paper.</p>
+<p><strong>Render Handheld Media Type </strong>shows you how the page appears
+  on a handheld device, such as a mobile phone or a BlackBerry device.</p>
+<p><strong>Render Projection Media Type </strong>shows you how the page appears
+  on a projection device.</p>
+</body>
+</html>

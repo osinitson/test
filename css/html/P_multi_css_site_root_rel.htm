@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>P_multi_css_site_root</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+@import url("/DRF/css/imported_CSS.css");
+h2 {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; color: #FF66FF; vertical-align: middle}
+h4 {
+	color: #0000FF;
+}
+a:active {  font-weight: bolder; color: #00FF00; text-decoration: none}
+.thisDocOnly1 {  background-color: #CCFFCC; border-bottom-width: auto; left: 5px; clip:  rect(5px   )}
+.thisDocOnly2 {  font-size: 9pt; color: #6666FF}
+
+-->
+</style>
+<link href="/DRF/css/folder1/linked_CSS.css" rel="stylesheet" type="text/css">
+<link href="/DRF/css/linked_w_imported_css_site_root.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p>You should see related files tabs for the following six CSS files. All of the paths to these CSS files are site root relative paths:</p>
+<ol>
+  <li>imported_css.css</li>
+  <li>linked_css.css</li>
+  <li>linked_w_imported_css_site_root.css</li>
+  <li>imported_inside_css_site_root.css</li>
+  <li>third_level_nested_site_root.css</li>
+  <li>fourth_level_nested_site_root.css</li>
+</ol>
+<h1>Block #1. This is an &lt;h1&gt; tag. The purple color and Arial font is defined in the external style sheet folder1/linked_CSS.css. The css file is in a subfolder, but it's considered to be only one level &quot;deep&quot;.</h1>
+<p class="thisDocOnly1">Block #2. This is a &lt;p&gt; tag. The green background color is defined in rule &quot;.thisDocOnly1&quot; which is an internal/embedded style in the &lt;head&gt;</p>
+<h2> Block #3. This is an &lt;h2&gt; tag. The pink color and Arial font is an embedded style in the head</h2>
+<p class="importedIn"> Block #4. This text uses the text-transform property to make it look uppercase. The rule &quot;.importedin&quot; is defined in the external style sheet imported_inside_css.css (two Levels deep). &nbsp;imported_inside_css.css is imported by linked_w_imported_css.css.</p>
+<p>Block #5. This is a &lt;p&gt; tag that has no CSS styles.</p>
+<p class="imported1"> Block #6. This is a &lt;p&gt; tag with the class &quot;.imported1&quot; that makes the text brown and the strike-through. &quot;.imported1&quot; is defined in the external style sheet imported_CSS.css (one level deep)</p>
+<p class="linked1">Block #7. This is a &lt;p&gt; tag with the class &quot;.linked1&quot; that makes the text red, oblique, and Courier. &quot;.linked1&quot; is defined in the external style sheet linked_CSS.css (one level deep)</p>
+<p><span class="linkedWz">Block #8. This is a span within a &lt;p&gt; tag. The &lt;span&gt; has the class &quot;.linkedWz&quot; applied to it, which makes the text purple, 14pt, italic. The class &quot;.linkedWz&quot; is defined in the external style sheet linked_w_imported_CSS.css (one level deep). The text is right-aligned because of the &lt;span&gt; tag redefinition in the external style sheet linked_w_imported_CSS.css.</span><span class="imported2">This is another &lt;span&gt; tag within the same &lt;p&gt; tag. The &lt;span&gt; has the class &quot;.imported2&quot; applied to it which makes the font Times New Roman. &quot;.imported2&quot; is defined in the external CSS file imported_CSS.css. The text is light blue because of the &lt;span&gt; tag redefinition in the external style sheet linked_w_imported_CSS.css.</span></p>
+<h4>Block #9a. This is a &lt;h4&gt; tag. The &lt;h4&gt; tag is redefined to be blue in the head. The &lt;h4&gt; tag is redefined to be Courier in linked_w_imported_CSS.css (one level deep). The &lt;h4&gt; tag is redefined to be in italics in imported_inside_CSS.css (two levels deep). The &lt;h4&gt; tag is redefined to  have a yellow background in the external CSS third_level_nested.css (three levels deep).</h4>
+<h4 class="thisDocOnly1">Block #9b. This is a &lt;h4&gt; tag with the class &quot;.thisDocOnly1&quot;. The &lt;h4&gt; tag is redefined to be blue in the head. The &lt;h4&gt; tag is redefined to be Courier in linked_w_imported_CSS.css (one level deep). The &lt;h4&gt; tag is redefined to be in italics in imported_inside_CSS.css (two levels deep). The &lt;h4&gt; tag is redefined to  have a yellow background in the external CSS third_level_nested.css (three levels deep).</h4>
+<h4 class="dotted_border">Block #10. This is the same as Block #9 except the &lt;h4&gt; has the class &quot;.dotted_border&quot; which is in the external CSS file fourth_level_CSS.css (four levels deep).</h4>
+<p class="thisDocOnly2">Block #11. This is a &lt;p&gt; tag with the class &quot;.thisDocOnly2&quot; which makes the font blue &amp; 9 pt</p>
+<p><span class="thisDocOnly2">Block #12. This is a &lt;span&gt; tag inside a &lt;p&gt; tag. The &lt;span&gt; tag has  the class &quot;.thisDocOnly2&quot; which makes the font blue &amp; 9 pt</span><br>
+  ------------------------------------------------------------------------</p>
+<p><a href="http://www.adobe.com">Block #13 this is a link</a> - color is defined in a:link in linkedCSS.css; a:hover is defined in importedInsideCSS.css; a:active is defined in linkedWithImportedCSS.css; </p>
+<ul class="linked1">
+  <li>Block 13b</li>
+  <li class="thisDocOnly2">test</li>
+  <li class="thisDocOnly1">test</li>
+</ul>
+<div id="Layer1" style="position:absolute; width:209px; height:78px; z-index:1; left: 629px; top: 1282px">Block #15a. This is a &lt;div&gt; w absolute position. The position is defined inline. The blue bg color center text align comes from the &lt;div&gt; redef in imported_CSS.css</div>
+<table width="75%" border="1">
+  <tr>
+    <td><p>Block #14. &lt;td&gt; is redefined in imported_CSS.css and makes bg color yellow, text color blue and bg repeat</p></td>
+    <td>blah</td>
+    <td>blah</td>
+  </tr>
+</table>
+<div id="id5">
+<p class="imported1">Block #15b. This a &lt;p&gt; tag inside a div tag. the &lt;p&gt; has the class &quot;.imported1&quot;. <a href="#">Here's a link</a>.</p></div>
+<div id="div6">
+<h4 class="dotted_border">Block #16. Content for  id "div6" Goes Here. <a href="#">Here's a link</a></h4></div>
+<p style="background: blue; color: white;">Block #17. &nbsp;This is a &lt;p&gt; tag with inline CSS that gives it a blue background and white font color</p>
+<p class="thisDocOnly1">Block #18. This is a &lt;p&gt; tag. The green background color is defined in rule &quot;.thisDocOnly1&quot; which is an internal/embedded style in the &lt;head&gt;</p>
+<form name="form1" method="post" action="">
+  <input type="text" name="textfield" id="textfield">
+</form>
+<p>&nbsp;</p>
+</body>
+</html>

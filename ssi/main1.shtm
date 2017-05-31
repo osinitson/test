@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SSI example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="ssi.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="ssi.js"></script>
+</head>
+<body>
+<p>This file should have <strong>six</strong> related files:</p>
+<ol>
+  <li>ssi.css</li>
+  <li>ssi.js</li>
+  <li>header1.htm</li>
+  <li>header2.inc</li>
+  <li>header3.ssi</li>
+  <li>nested1.htm</li>
+</ol>
+<p>In Design view (not Live View), you should see the following <strong>four</strong> blocks of colored text, all coming from the includes:</p>
+<ol>
+  <li>four lines of red text &nbsp;&nbsp;(header1.htm)</li>
+  <li>four lines of blue text &nbsp;&nbsp;(header2.inc)</li>
+  <li>four lines of green text &nbsp;&nbsp;(header3.ssi)</li>
+  <li>four lines of brown text &nbsp;&nbsp;(nested1.htm)</li>
+</ol>
+<p>In Live View, you should see a fifth pink block of text (nested2.htm) at the bottom of the page.</p>
+<p>This page needs to be processed by an IIS server (e.g. dreamqe01) to look correct in Preview in Browser. If you use an Apache server, you won't see the pink text for nested2.htm.</p>
+<hr>
+<!--#include file="includes/header1.htm" -->
+<!--#include file="includes/header2.inc" -->
+<!--#include virtual="/DRF/ssi/includes/header3.ssi" -->
+<p>This text is from the parent doc main1.shtm. The include statments used on this page are LOCAL TEST:</p>
+<table border="1">
+  <tr>
+    <td>&lt;!--#include file=&quot;includes/header1.htm&quot; --&gt;</td>
+    <td>(document relative path)</td>
+  </tr>
+  <tr>
+    <td>&lt;!--#include file=&quot;includes/header2.inc&quot; --&gt;</td>
+    <td>(document relative path)</td>
+  </tr>
+  <tr>
+    <td>&lt;!--#include virtual=&quot;/dalcala/Code_Nav_Samples/ssi/includes/header3.ssi&quot; --&gt;</td>
+    <td>(site root relative path)</td>
+  </tr>
+</table>
+<p>================================</p>
+<p>Nested include test. DW only displays one block  below (brown text), but the browser displays two blocks (brown text and pink text):</p>
+<!--#include file="includes/nested1.htm" -->
+</body>
+</html>
